@@ -4,13 +4,14 @@ import pvlogo from '../assets/pvlogo.jpg';
 
 <div id="container">
 	<main>
-		<section id="hero">
-			            <img id="logo" src={pvlogo.src} alt="piss and vinegar" fetchpriority="high" width="57%" />
-			<br />
+	<section id="hero">
+        
+            <img id="logo" src={pvlogo.src} alt="piss and vinegar" fetchpriority="high" width="57%" />
             <section id="links">
-				<a class="button" href="mailto:garrick_bowie@yahoo.com">Contact Us</a>
-                
-			</section>
+                <a class="button" href="mailto:garrick_bowie@yahoo.com">Contact Us</a>
+            </section>
+    </section>
+       
 	</main>
 		
 </div>
@@ -37,10 +38,15 @@ import pvlogo from '../assets/pvlogo.jpg';
 	}
 
 	main {
-		height: 100%;
-		display: flex;
-		justify-content: center;
+        display: flex;
+    justify-content: center;
+    align-items: center;
 	}
+    main img{    
+    width: 500px;
+    height: 500px;
+
+}
 
 	#hero {
 		display: flex;
@@ -58,6 +64,8 @@ import pvlogo from '../assets/pvlogo.jpg';
 
 	#links {
 		display: flex;
+        justify-content: center;
+        width: 100%;
 		gap: 16px;
 	}
 
@@ -165,10 +173,16 @@ import pvlogo from '../assets/pvlogo.jpg';
 		#hero {
 			display: block;
 			padding-top: 10%;
+            align-items: center;
 		}
+    main img{
+        width: 300px;
+        height: 300px;
+}
 
 		#links {
 			flex-wrap: wrap;
+            justify:center;
 		}
 
 		#links a.button {
